@@ -18,9 +18,9 @@ Algoritmo menu_opciones2
 	arreglo_numeros(8)="9) Menor que -20,Multiplo de 7."
 	arreglo_numeros(9)="10) Tipos de pitajaya."
 	arreglo_numeros(10)="11) Par menor que 10,divisble para 5."
-	arreglo_numeros(11)="12) F·bricas El cometa."
-	arreglo_numeros(12)="13) Cu·ntos dÌgitos tiene el numero."
-	arreglo_numeros(13)="14) Numero capic˙a."
+	arreglo_numeros(11)="12) F√°bricas El cometa."
+	arreglo_numeros(12)="13) Cu√°ntos d√≠gitos tiene el numero."
+	arreglo_numeros(13)="14) Numero capic√∫a."
 	arreglo_numeros(14)="15) Divisores de un numero."
 	arreglo_numeros(15)="16) Suma de los visisores de un numero."
 	arreglo_numeros(16)="17) Cantidad de divisiores de un numero."
@@ -115,8 +115,12 @@ si menu_n == 2 Entonces
 	leer opcion
 	Borrar Pantalla
 	Segun opcion Hacer
+                1:Ejercicio2_1(2)
 		2:Ejercicio2_2(2)
-		4:Ejercicio2_4(2)	
+                3:Ejercicio2_3(2)
+		4:Ejercicio2_4(2)
+                5:Ejercicio2_5(2)
+                6:Ejercicio2_6(2)
 		7:Ejercicio2_7(2)
 		8:Ejercicio2_8(2)
 		9:Ejercicio2_9(2)
@@ -267,9 +271,9 @@ FinFuncion
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //                    EJERCICIO NUMEROS 
 Funcion ejercicio_1(1)
-	//1) Determinar cu·nto se  debe pagar por cierta  cantidad de colas,  considerando que si  son m·s de 23 colas, el costo por unidad  
-	//es de $0,50 caso  contrario el precio ser·  20% mas. Al costo resultante calcular el 12% del iva. Se pide presentar: cantidad comprada, 
-	//el costo ¥por unidad, el total sin iva el iva y el total a pagar. 
+	//1) Determinar cu√°nto se  debe pagar por cierta  cantidad de colas,  considerando que si  son m√°s de 23 colas, el costo por unidad  
+	//es de $0,50 caso  contrario el precio ser√°  20% mas. Al costo resultante calcular el 12% del iva. Se pide presentar: cantidad comprada, 
+	//el costo ¬¥por unidad, el total sin iva el iva y el total a pagar. 
 	Escribir "cuantas colas llevara";
 	leer a;
 	b=0.50+(0.20*0.50)
@@ -290,10 +294,10 @@ Funcion ejercicio_1(1)
 Fin Funcion
 
 funcion ejercicio_2(1)
-	//2) La asociaciÛn de vinicultores tiene como polÌtica fijar un  precio inicial al kilo   de uva, la cual se clasifica en tipos A y B,  
-	//y adem·s en tamaÒos 1 y 2.  Cuando se realiza la venta del producto, Èsta es de un solo tipo y tamaÒo, se requiere determinar cu·nto 
-	//recibir· un productor por la uva que  entrega en un  embarque, considerando lo siguiente:Si es de tipo A, se le cargan 20 al precio  
-	//inicial cuando es  de tamaÒo 1; y 30 si es de tamaÒo 2. Si es de tipo B, se rebajan  30 cuando es de tamaÒo 1, y  50 cuando es de tamaÒo 2.  
+	//2) La asociaci√≥n de vinicultores tiene como pol√≠tica fijar un  precio inicial al kilo   de uva, la cual se clasifica en tipos A y B,  
+	//y adem√°s en tama√±os 1 y 2.  Cuando se realiza la venta del producto, √©sta es de un solo tipo y tama√±o, se requiere determinar cu√°nto 
+	//recibir√° un productor por la uva que  entrega en un  embarque, considerando lo siguiente:Si es de tipo A, se le cargan 20 al precio  
+	//inicial cuando es  de tama√±o 1; y 30 si es de tama√±o 2. Si es de tipo B, se rebajan  30 cuando es de tama√±o 1, y  50 cuando es de tama√±o 2.  
 	//Realice un algoritmo para determinar la ganancia obtenida 
 	definir a,A1,A2,B1,B2 Como Caracter
 	Escribir "Ingrese que tipo de uva vendera";
@@ -325,7 +329,7 @@ funcion ejercicio_2(1)
 FinFuncion
 
 funcion ejercicio_3(1)
-	//3) Dado dos n˙meros obtener el residuo sin el operador mod,%
+	//3) Dado dos n√∫meros obtener el residuo sin el operador mod,%
 	Escribir "Ingrese dos numeros para calcular el residuo";
 	Leer a;
 	Leer b;
@@ -335,11 +339,11 @@ funcion ejercicio_3(1)
 FinFuncion
 
 funcion ejercicio_4(1)
-	//4) El consultorio del Dr. Paez tiene como polÌtica cobrar la consulta con base en el n˙mero de cita, de la siguiente forma: 
+	//4) El consultorio del Dr. Paez tiene como pol√≠tica cobrar la consulta con base en el n√∫mero de cita, de la siguiente forma: 
 	//Las tres primeras citas a $200.00 c/u. Las siguientes dos citas a $150.00 c/u. Las tres siguientes citas a $100.00 c/u. 
-	//Las restantes a $50.00 c/u, mientras dure el tratamiento. Se requiere un algoritmo para determinar: Cu·nto pagar· el paciente por la cita.
-	// El monto de lo que ha pagado el paciente por el tratamiento. Para la soluciÛn de este problema se requiere saber quÈ n˙mero de cita se
-	// efectuar·, con el cual se podr· determinar el costo que tendr· la consulta  y cu·nto se ha gastado en el tratamiento. 
+	//Las restantes a $50.00 c/u, mientras dure el tratamiento. Se requiere un algoritmo para determinar: Cu√°nto pagar√° el paciente por la cita.
+	// El monto de lo que ha pagado el paciente por el tratamiento. Para la soluci√≥n de este problema se requiere saber qu√© n√∫mero de cita se
+	// efectuar√°, con el cual se podr√° determinar el costo que tendr√° la consulta  y cu√°nto se ha gastado en el tratamiento. 
 	Escribir "Ingrese el numero de su cita";
 	Leer a;
 	Si a <= 3 Entonces
@@ -365,7 +369,7 @@ funcion ejercicio_4(1)
 FinFuncion
 
 funcion ejercicio_5(1)
-	//5)Escribir un algoritmo que lea cuatro n˙meros y determine si el numero 1  es la mitad del n˙mero 2; Y si el numero 3 es divisor del numero 4.
+	//5)Escribir un algoritmo que lea cuatro n√∫meros y determine si el numero 1  es la mitad del n√∫mero 2; Y si el numero 3 es divisor del numero 4.
 	Escribir "ingrese 4 numeros porfavor"
 	Leer num1;
 	Leer num2;
@@ -384,10 +388,10 @@ funcion ejercicio_5(1)
 FinFuncion
 
 funcion ejercicio_6(1)
-//6) El banco XYZ ha decidido aumentar el lÌmite de crÈdito de las tarjetas de crÈdito  de sus clientes, para esto considera que: 
-//Si su cliente tiene tarjeta tipo 1, el aumento ser· del  25%. Si tiene tipo 2 el aumento ser· del 35% Si tiene tipo 3, 
-//el aumento ser· del 40% Para cualquier otro tipo ser· del 50% Se pide realizar un algoritmo que ayude al banco a determinar el nuevo 
-//lÌmite de crÈdito que tendr· una persona en su tarjeta considerando que despuÈs del aumento de porcentaje se tendr· que subir $20 adicionales
+//6) El banco XYZ ha decidido aumentar el l√≠mite de cr√©dito de las tarjetas de cr√©dito  de sus clientes, para esto considera que: 
+//Si su cliente tiene tarjeta tipo 1, el aumento ser√° del  25%. Si tiene tipo 2 el aumento ser√° del 35% Si tiene tipo 3, 
+//el aumento ser√° del 40% Para cualquier otro tipo ser√° del 50% Se pide realizar un algoritmo que ayude al banco a determinar el nuevo 
+//l√≠mite de cr√©dito que tendr√° una persona en su tarjeta considerando que despu√©s del aumento de porcentaje se tendr√° que subir $20 adicionales
 //a todas las tarjetas 
 	definir x Como Caracter
 	definir z como entero
@@ -425,7 +429,7 @@ FinFuncion
 
 
 funcion ejercicio_7(1)
-	//7)Escribir un algoritmo que lea cuatro n˙meros y determine si el numero 1 es divisor del numero3 Y si el numero 2 es el doble del numero4.
+	//7)Escribir un algoritmo que lea cuatro n√∫meros y determine si el numero 1 es divisor del numero3 Y si el numero 2 es el doble del numero4.
  	Escribir "Ingrese 4 numeros";
 	Leer num1;
 	Leer num2;
@@ -444,10 +448,10 @@ funcion ejercicio_7(1)
 FinFuncion
 
 funcion ejercicio_8(1)
-//8) El banco POO ha decidido aumentar el lÌmite de crÈdito de las tarjetas de crÈdito  de sus clientes, para esto considera que: 
-//Si su cliente tiene tarjeta tipo 1, el aumento ser· del  $100 . Si tiene tipo 2 el aumento ser· del $200 Si tiene tipo 3, 
-//el aumento ser· del $300 Para cualquier otro tipo ser· del 500 Realizar un algoritmo que ayude al banco a determinar el nuevo lÌmite de 
-//crÈdito que tendr· una persona en su tarjeta considerando que  despuÈs del aumento se tendr· que subir 10% adicionales a todas las tarjetas 	
+//8) El banco POO ha decidido aumentar el l√≠mite de cr√©dito de las tarjetas de cr√©dito  de sus clientes, para esto considera que: 
+//Si su cliente tiene tarjeta tipo 1, el aumento ser√° del  $100 . Si tiene tipo 2 el aumento ser√° del $200 Si tiene tipo 3, 
+//el aumento ser√° del $300 Para cualquier otro tipo ser√° del 500 Realizar un algoritmo que ayude al banco a determinar el nuevo l√≠mite de 
+//cr√©dito que tendr√° una persona en su tarjeta considerando que  despu√©s del aumento se tendr√° que subir 10% adicionales a todas las tarjetas 	
 	definir a Como Caracter
 	Escribir "Que tipo de tarjeta tiene";
 	Leer a;
@@ -482,7 +486,7 @@ funcion ejercicio_8(1)
 FinFuncion
 
 funcion ejercicio_9(1)
-//9) Pedir al usuario un n˙mero y mostrar si es negativo menor que -20, sino mostrar si es positivo par o impar m˙ltiplo de 7. 
+//9) Pedir al usuario un n√∫mero y mostrar si es negativo menor que -20, sino mostrar si es positivo par o impar m√∫ltiplo de 7. 
 	Escribir "Ingrese un numero positivo o negativo";
 	Leer x
 	Si x < -20 Entonces
@@ -506,11 +510,11 @@ funcion ejercicio_9(1)
 FinFuncion
 
 funcion ejercicio_10(1)
-//10) La asociaciÛn de vinicultores tiene como polÌtica fijar un precio inicial al quintal de pitajaya, 
-//la cual se clasifica en tipos "Amarilla" y "Colorada", y adem·s en tamaÒos 1 y 2. Cuando se realiza la venta del producto, 
-//Èsta es de un solo tipo y tamaÒo, se requiere determinar cu·nto recibir· un productor por la pitajaya que entrega en un embarque, 
-//considerando lo siguiente: ?  Si es de tipo Amarilla, se le cargan $10 al precio inicial cuando es de tamaÒo 1; y 15% mas $5 si es de tamaÒo 2  
-//?  Si es de tipo Colorada, se rebajan $20 cuando es de tamaÒo 1, y 20% cuando es de tamaÒo 2. Sea tipo Amarilla y Colorada se debe se aplicar 
+//10) La asociaci√≥n de vinicultores tiene como pol√≠tica fijar un precio inicial al quintal de pitajaya, 
+//la cual se clasifica en tipos "Amarilla" y "Colorada", y adem√°s en tama√±os 1 y 2. Cuando se realiza la venta del producto, 
+//√©sta es de un solo tipo y tama√±o, se requiere determinar cu√°nto recibir√° un productor por la pitajaya que entrega en un embarque, 
+//considerando lo siguiente: ?  Si es de tipo Amarilla, se le cargan $10 al precio inicial cuando es de tama√±o 1; y 15% mas $5 si es de tama√±o 2  
+//?  Si es de tipo Colorada, se rebajan $20 cuando es de tama√±o 1, y 20% cuando es de tama√±o 2. Sea tipo Amarilla y Colorada se debe se aplicar 
 //un descuento del 5% y el 12% del IVA. Realice un algoritmo para determinar el precio de embarque 
 	definir a,TA1,TA2,TC1,TC2 Como Caracter
 	Escribir "Que tipo de pitajaya llevara";
@@ -525,21 +529,21 @@ funcion ejercicio_10(1)
 	Leer z;
 	Segun a Hacer
 		"Amarillas 1":
-			Escribir "usted llevara ",z," pitajayas Amarillas tamaÒo 1";
+			Escribir "usted llevara ",z," pitajayas Amarillas tama√±o 1";
 			EScribir "El subtotal mas el cargo de 10$ sera de :",10+(x*z);
 			Escribir "Tiene un 5% de descuento :",10+(x*z)-(0.05*(10+(x*z)));
 			Escribir "Su total a pagar por el embarque  mas iva sera de :",0.12*(10+(x*z)-(0.05*(10+(x*z))))+(x*z);
 		"Amarillas 2":
-			Escribir "usted llevara ",z," pitajayas Amarillas tamaÒo 2";
+			Escribir "usted llevara ",z," pitajayas Amarillas tama√±o 2";
 			EScribir "El subtotal mas el cargo de 5$ sera de :",5+(x*z);
 			Escribir "Tiene un 15% de descuento :",0.15*(5+(x*z))-5+(x*z);
 			Escribir "Su total a pagar por el embarque  mas iva sera de :",0.12*(5+(x*z)-(0.15*(5+(x*z))))+(x*z);
 		"Colorada  1":
-			Escribir "usted llevara ",z," pitajayas Colorada tamaÒo 1";
+			Escribir "usted llevara ",z," pitajayas Colorada tama√±o 1";
 			Escribir "Tiene un descuento de 20$ :",20-(x*z);
 			Escribir "Su total a pagar por el embarque  mas iva sera de :",0.12*(0.05*(20-(x*z)));
 		"Colorada  2":
-		    Escribir "usted llevara ",z," pitajayas Colorada tamaÒo 2";
+		    Escribir "usted llevara ",z," pitajayas Colorada tama√±o 2";
 		    Escribir "Tiene un descuento de 20% :",0.20*(x*z)+x*z;
 		    Escribir "Su total a pagar por el embarque  mas iva sera de :",0.12*(0.05*(0.20-(x*z)+x*z));
 		De Otro Modo:
@@ -549,7 +553,7 @@ FinFuncion
 
 
 funcion ejercicio_11(1)
-	//11) Pedir al usuario un n˙mero y mostrar si es par menor que 10, sino mostrar si es negativo e impar o negativo divisible para 5.
+	//11) Pedir al usuario un n√∫mero y mostrar si es par menor que 10, sino mostrar si es negativo e impar o negativo divisible para 5.
 	escribir "Ingrese un numero";
 	Leer x;
 	Si x > 0 Y x < 10 Y x mod 2 = 0 Entonces
@@ -567,11 +571,11 @@ FinFuncion
 
 
 funcion ejercicio_12(1)
-//12) F·bricas "El cometa" produce artÌculos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta, 
-//para esto hay que considerar lo siguiente: Costo de producciÛn = materia prima + mano de obra + gastos de fabricaciÛn. 
-//Precio de venta = costo de producciÛn + 45 % de costo de producciÛn. El costo de la mano de obra se obtiene de la siguiente forma: 
+//12) F√°bricas "El cometa" produce art√≠culos con claves (1, 2, 3, 4, 5 y 6). Se requiere un algoritmo para calcular los precios de venta, 
+//para esto hay que considerar lo siguiente: Costo de producci√≥n = materia prima + mano de obra + gastos de fabricaci√≥n. 
+//Precio de venta = costo de producci√≥n + 45 % de costo de producci√≥n. El costo de la mano de obra se obtiene de la siguiente forma: 
 //para los productos con clave 3 o 4 se carga 75 % del costo de la materia prima; para los que tienen clave 1 o 5 se carga 80 %, y 
-//para los que tienen clave 2 o 6, 85 %. Para calcular el gasto de fabricaciÛn se considera que, si el artÌculo que se va a producir tiene 
+//para los que tienen clave 2 o 6, 85 %. Para calcular el gasto de fabricaci√≥n se considera que, si el art√≠culo que se va a producir tiene 
 //claves 2 o 5, este gasto representa 30 % sobre el costo de la materia prima; si las claves son 3 o 6, representa 35 %; 
 //si las claves son 1 o 4, representa 28 %. La materia prima tiene el mismo costo para cualquier clave. 
 	Escribir "Que clave tiene su articulo";
@@ -617,7 +621,7 @@ funcion ejercicio_12(1)
 FinFuncion
 
 funcion ejercicio_13(1)
-	//13) Dado un n˙mero entero N, calcular e informar al usuario cu·ntos dÌgitos tiene dicho n˙mero.
+	//13) Dado un n√∫mero entero N, calcular e informar al usuario cu√°ntos d√≠gitos tiene dicho n√∫mero.
 	Definir x,c Como Entero
 	Escribir "Ingrese un numero ";
 	Leer x;
@@ -629,7 +633,7 @@ funcion ejercicio_13(1)
 FinFuncion
 
 funcion ejercicio_14(1)
-	//14) Dado un n˙mero, determine si es capic˙a. Nota: un n˙mero capic˙a es aquel que se lee igual hacia adelante que hacia atr·s. 
+	//14) Dado un n√∫mero, determine si es capic√∫a. Nota: un n√∫mero capic√∫a es aquel que se lee igual hacia adelante que hacia atr√°s. 
 	Escribir "ingrese un numero de tres digitos";
 	Leer x;
 	a= trunc(x/100)
@@ -658,25 +662,25 @@ funcion ejercicio_17(1)
 FinFuncion
 
 funcion ejercicio_18(1)
-	//18) Escribir un algoritmo que indique si un n˙mero es perfecto Nota: un n˙mero es perfecto cuando la suma de los divisores del n˙mero 
-	//incluido el 1 y excluido el propio n˙mero es igual al numero Ejemplo: numero=6: los divisores del 6 son: 1+2+3=6 
+	//18) Escribir un algoritmo que indique si un n√∫mero es perfecto Nota: un n√∫mero es perfecto cuando la suma de los divisores del n√∫mero 
+	//incluido el 1 y excluido el propio n√∫mero es igual al numero Ejemplo: numero=6: los divisores del 6 son: 1+2+3=6 
 	x=REU4(x,i,suma,cot)
 FinFuncion
 
 
 funcion ejercicio_19(1)
-	//19) Dado un n˙mero N determinar si es un n˙mero primo. Nota: Un n˙mero primo es aquel que solo es divisible por 1(uno) y por el mismo.
+	//19) Dado un n√∫mero N determinar si es un n√∫mero primo. Nota: Un n√∫mero primo es aquel que solo es divisible por 1(uno) y por el mismo.
  	conte=REU5(x,i,suma,conte)
 FinFuncion
 
 funcion ejercicio_20(1)
-	//20) Dado dos n˙meros determinar si son   primos gemelos. Nota: Dos n˙meros son primos gemelos si los dos son primos y 
+	//20) Dado dos n√∫meros determinar si son   primos gemelos. Nota: Dos n√∫meros son primos gemelos si los dos son primos y 
 	//su resta en valor absoluto es igual a 2.  Ejemplo: 7 y 5 
 	cont=REU6(x,i,suma,conte)
 FinFuncion
 
 funcion ejercicio_21(1)
-//21) Dado dos n˙meros determinar si son   primos amigos. Nota: Dos n˙meros son primos amigos si las sumas de los divisores del numero1 es 
+//21) Dado dos n√∫meros determinar si son   primos amigos. Nota: Dos n√∫meros son primos amigos si las sumas de los divisores del numero1 es 
 //igual a la suma de los divisores del numero2.  Ejemplo: 6(1+2+3=6) y 25(1+5=6)
 	x2=REU7(x,i,suma,cot,sumaz)	
 FinFuncion
@@ -703,7 +707,7 @@ FinFuncion
 
 
 Funcion Ejercicio2_2(2)
-//	2) Implementa un programa que calcule el promedio de los elementos pares e impares en un arreglo de n˙meros enteros y los copie en otro arreglo. 
+//	2) Implementa un programa que calcule el promedio de los elementos pares e impares en un arreglo de n√∫meros enteros y los copie en otro arreglo. 
 	//Ejemplo: arreglo[2,3,4,7]     areglo2[3,5] 
 	definir a como entero
 	Definir arreglo Como Entero;
@@ -837,7 +841,7 @@ Funcion Ejercicio2_7(2)
 	Definir numero, contMay5, sumaMultiplos5 Como Entero
     contMay5 <- 0
     sumaMultiplos5 <- 0
-    Escribir "Ingrese una secuencia de n˙meros (ingrese un n˙mero par para finalizar):"
+    Escribir "Ingrese una secuencia de n√∫meros (ingrese un n√∫mero par para finalizar):"
     Leer num
     Mientras num MOD 2 <> 0 Hacer
         Si num > 5 Entonces
@@ -904,7 +908,7 @@ Funcion ejercicio2_10(2)
     Dimension numeros[100]
 	Definir i Como Entero
 	
-	Escribir "Ingrese una secuencia de n˙meros (ingrese un n˙mero negativo para terminar):"
+	Escribir "Ingrese una secuencia de n√∫meros (ingrese un n√∫mero negativo para terminar):"
 	
 	i <- 0
 	
@@ -915,7 +919,7 @@ Funcion ejercicio2_10(2)
 		Leer numeros[i]
 	FinMientras
 	
-	Escribir "N˙meros originales:"
+	Escribir "N√∫meros originales:"
 	i <- 0
 	
 	Mientras i < 100 Y numeros[i] >= 0
@@ -924,7 +928,7 @@ Funcion ejercicio2_10(2)
 		i <- i + 1
 	FinMientras
 	
-	Escribir "N˙meros duplicados:"
+	Escribir "N√∫meros duplicados:"
 	i <- 0
 	
 	Mientras i < 100 Y numeros[i] >= 0
@@ -951,7 +955,7 @@ Funcion ejercicio2_11(2)
 		i <- i + 1
 	Hasta Que caracteres[i-1] = "."
 	
-	Escribir "Se ingresaron ", contador_x, " veces el car·cter ',"x",'."
+	Escribir "Se ingresaron ", contador_x, " veces el car√°cter ',"x",'."
 FinFuncion
 
 Funcion ejercicio2_12(2)
@@ -960,7 +964,7 @@ Funcion ejercicio2_12(2)
 	i = 1
 	j = 1
 	
-	Escribir "Ingrese una secuencia de n˙meros (0 para terminar):"
+	Escribir "Ingrese una secuencia de n√∫meros (0 para terminar):"
 	Leer num
 	
 	Mientras num <> 0 Y i <= 100 Hacer
@@ -979,12 +983,12 @@ Funcion ejercicio2_12(2)
 	FinPara
 	
 	Si j > 1 Entonces
-		Escribir "Arreglo de n˙meros pares:"
+		Escribir "Arreglo de n√∫meros pares:"
 		Para l = 1 Hasta j - 1 con Paso 1
 			Escribir arreglo2[l]
 		FinPara
 	Sino
-		Escribir "No hay n˙meros pares en el arreglo."
+		Escribir "No hay n√∫meros pares en el arreglo."
 	FinSi
 FinFuncion
 
@@ -996,10 +1000,10 @@ Funcion ejercicio2_13(2)
     dimension valoresMayoresA5[100]
     Definir i, j Como Entero
 	
-    Escribir "Ingrese el n˙mero inicial:"
+    Escribir "Ingrese el n√∫mero inicial:"
     Leer numeroInicial
 	
-    Escribir "Ingrese el n˙mero final:"
+    Escribir "Ingrese el n√∫mero final:"
     Leer numeroFinal
 	
     Escribir "Valores mayores o iguales a 5 entre ", numeroInicial, " y ", numeroFinal, " son:"
@@ -1080,10 +1084,10 @@ Funcion ejercicio2_15(2)
 	dimension valoresImpares[100]
     Definir i, j Como Entero
 	
-    Escribir "Ingrese el n˙mero inicial:"
+    Escribir "Ingrese el n√∫mero inicial:"
     Leer numeroInicial
 	
-    Escribir "Ingrese el n˙mero final:"
+    Escribir "Ingrese el n√∫mero final:"
     Leer numeroFinal
 	
     Si numeroInicial < numeroFinal Entonces
@@ -1124,7 +1128,7 @@ FinFuncion
 
 Funcion Ejercicio2_16(2)
 //16) Elaborar un algoritmo que lea una serie de sueldos de los empleados de la unemi y los guarde en un arreglo. Se pide:     
-//Presentar el sueldo m·s alto de los empleados ∑ La cantidad y el promedio de os sueldos de los empleados Ejemplo: 
+//Presentar el sueldo m√°s alto de los empleados ¬∑ La cantidad y el promedio de os sueldos de los empleados Ejemplo: 
 //sueldos=[500,700,800,600] SueldoMasAlto= 800 cantidadSueldos=4 promedioGeneral=650 
 	Dimension sueldos[100]
     Definir i, cantidad Como Entero
@@ -1158,7 +1162,7 @@ Funcion Ejercicio2_16(2)
 	promedio = promedio / cantidad
 	
 	Si cantidad > 0 Entonces
-		Escribir "El sueldo m·s alto de los empleados es: ", sueldoMaximo
+		Escribir "El sueldo m√°s alto de los empleados es: ", sueldoMaximo
 		Escribir "La cantidad de sueldos ingresados es: ", cantidad
 		Escribir "El promedio de los sueldos es: ", promedio
 	Sino
@@ -1215,7 +1219,7 @@ Funcion Ejercicio2_18(2)
 FinFuncion
 
 Funcion Ejercicio2_19(2)
-//19) Dado una cadena indicar cuantas vocales, consonantes y dÌgitos hay" 	
+//19) Dado una cadena indicar cuantas vocales, consonantes y d√≠gitos hay" 	
 	Definir x como cadena;
 	Definir chr Como Caracter;
 	contador=0
@@ -1262,7 +1266,7 @@ Funcion Ejercicio2_20(2)
 FinFuncion
 
 Funcion Ejercicio2_21(2)
-//21) Presentar la suma de los dÌgitos de una cedula" 
+//21) Presentar la suma de los d√≠gitos de una cedula" 
 	Definir n,suma Como Entero
 	Escribir "Ingrese su cedula";
 	Leer n;
@@ -1276,7 +1280,7 @@ FinFuncion
 
 
 funcion Ejercicio2_22(2)
-//22) Indicar si una palabra es palÌndroma". Ejemplo: "ana" es palÌndroma por se lee igual de inicio a fin que de fin a inicio
+//22) Indicar si una palabra es pal√≠ndroma". Ejemplo: "ana" es pal√≠ndroma por se lee igual de inicio a fin que de fin a inicio
 	Definir palabra Como Caracter
 	Escribir "Ingrese una palabra"
 	Leer palabra
@@ -1295,12 +1299,12 @@ FinFuncion
 	
 	
 Funcion Ejercicio2_23(2)
-//23) Presentar la posiciÛn de un car·cter cualquiera dentro de una cadena"
-	Definir cadena, caracter Como Car·cter
+//23) Presentar la posici√≥n de un car√°cter cualquiera dentro de una cadena"
+	Definir cadena, caracter Como Car√°cter
     Definir posicion, i Como Entero
     Escribir "Ingrese una cadena de texto:"
     Leer cadena
-    Escribir "Ingrese el car·cter que desea buscar:"
+    Escribir "Ingrese el car√°cter que desea buscar:"
     Leer caracter
     posicion = 0  
     i <- 1
@@ -1313,10 +1317,10 @@ Funcion Ejercicio2_23(2)
     FinMientras
 	
     Si posicion > 0 Entonces
-        Escribir "El car·cter ", caracter, " se encuentra en la posiciÛn ",posicion+1, " de la cadena."
+        Escribir "El car√°cter ", caracter, " se encuentra en la posici√≥n ",posicion+1, " de la cadena."
     Sino
         si posicion = 0 Entonces
-			Escribir "El car·cter ", caracter, " no se encuentra en la cadena."
+			Escribir "El car√°cter ", caracter, " no se encuentra en la cadena."
 		FinSi
     FinSi
 FinFuncion
